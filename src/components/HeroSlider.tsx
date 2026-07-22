@@ -73,7 +73,7 @@ export function HeroSlider() {
                 </p>
                 <a
                   href={`tel:${site.phone}`}
-                  className="mt-2 block text-5xl font-extrabold tracking-tight text-accent sm:text-6xl"
+                  className="mt-2 block text-3xl font-extrabold tracking-tight text-accent sm:text-5xl lg:text-6xl"
                 >
                   {slide.phone}
                 </a>

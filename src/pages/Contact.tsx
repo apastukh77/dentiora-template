@@ -1,5 +1,6 @@
 import { MapEmbed } from "@/components/MapEmbed"
 import { ContactBlocks } from "@/components/ContactBlocks"
+import { ContactForm } from "@/components/ContactForm"
 import { useLanguage } from "@/i18n/LanguageContext"
 
 export function Contact() {
@@ -30,6 +31,11 @@ export function Contact() {
       <div className="mt-16">
         <ContactBlocks />
       </div>
+
+      <div className="mt-20 px-4 lg:px-6">
+        <ContactForm />
+      </div>
+
     </div>
   )
 }

@@ -109,6 +109,33 @@ export const translations = {
       footerNavContact: "Contact",
     },
     callNow: "Sună Acum!",
+
+    contactForm: {
+      title: "Programare online",
+      subtitle: "Completați formularul, iar detaliile vor fi trimise direct pe WhatsApp-ul clinicii.",
+      nameLabel: "Numele dvs.",
+      namePlaceholder: "Ion Popescu",
+      phoneLabel: "Număr de telefon",
+      serviceLabel: "Serviciul dorit",
+      serviceOptions: [
+        "Urgență / Durere",
+        "Plombe (Carii)",
+        "Tratament de canal",
+        "Consultație generală"
+      ],
+      detailsLabel: "Detalii suplimentare",
+      detailsPlaceholder: "Descrieți pe scurt problema...",
+      submitBtn: "Trimite pe WhatsApp",
+      successTitle: "Mulțumim!",
+      successText: "S-a deschis WhatsApp-ul cu mesajul dumneavoastră. Apăsați butonul de trimitere din aplicație.",
+      anotherBtn: "Trimite alt mesaj",
+      waTitle: "Programare / Solicitare Nouă",
+      waName: "Nume",
+      waPhone: "Telefon",
+      waService: "Serviciu",
+      waMessage: "Mesaj"
+    },
+
   },
   en: {
     header: {
@@ -218,6 +245,33 @@ export const translations = {
       footerNavContact: "Contact",
     },
     callNow: "Call Now!",
+
+    contactForm: {
+      title: "Online Appointment",
+      subtitle: "Fill out the form and details will be sent directly to the clinic's WhatsApp.",
+      nameLabel: "Your Name",
+      namePlaceholder: "John Smith",
+      phoneLabel: "Phone Number",
+      serviceLabel: "Desired Service",
+      serviceOptions: [
+        "Emergency / Pain",
+        "Fillings",
+        "Root canal treatment",
+        "General consultation"
+      ],
+      detailsLabel: "Additional Details",
+      detailsPlaceholder: "Briefly describe the issue...",
+      submitBtn: "Send via WhatsApp",
+      successTitle: "Thank you!",
+      successText: "WhatsApp has opened with your message. Click the send button in the app.",
+      anotherBtn: "Send another message",
+      waTitle: "New Appointment / Inquiry",
+      waName: "Name",
+      waPhone: "Phone",
+      waService: "Service",
+      waMessage: "Message"
+    },
+
   },
 } as const
 

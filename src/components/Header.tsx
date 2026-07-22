@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
-import { Phone, Clock3, Search, Facebook, Twitter, Linkedin, Menu, X } from "lucide-react"
+import { Phone, Clock3, Facebook, Twitter, Linkedin, Menu, X } from "lucide-react"
 import { Logo } from "./Logo"
 import { LanguageDropdown } from "./LanguageDropdown"
 import { PinterestIcon } from "./PinterestIcon"
@@ -30,7 +30,6 @@ export function Header() {
       {/* Top row */}
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-6">
         <Logo />
-
         <div className="hidden items-center gap-8 lg:flex">
           <a href={`tel:${site.phone}`} className="flex items-center gap-3 transition-opacity hover:opacity-80">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent/10">
@@ -107,13 +106,13 @@ export function Header() {
             </div>
             <div className="h-5 w-px bg-border" />
             <LanguageDropdown />
-            <button
+            {/* <button
               type="button"
               aria-label={t.header.searchPlaceholder}
               className="text-muted-foreground transition-colors hover:text-primary"
             >
-              <Search className="h-4 w-4" />
-            </button>
+              
+            </button> */}
           </div>
         </div>
       </div>
