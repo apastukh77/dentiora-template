@@ -221,4 +221,6 @@ export const translations = {
   },
 } as const
 
-export type TranslationSet = (typeof translations)["ro"]
+export type TranslationSet =
+  (typeof translations)["ro"] |
+  (typeof translations)["en"];
