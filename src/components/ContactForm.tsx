@@ -25,7 +25,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="mx-auto max-w-xl rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
+    <div id="contact-form" className="mx-auto max-w-xl rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
       <h3 className="text-2xl font-bold text-primary">{t.title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{t.subtitle}</p>
 

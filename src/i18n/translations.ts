@@ -7,6 +7,7 @@ export const translations = {
       hoursTitle: "Luni - Duminică",
       hoursValue: "24/7",
       searchPlaceholder: "Caută...",
+      onlineAppointment: "Programare Online",
     },
     nav: {
       home: "Acasă",
@@ -49,6 +50,7 @@ export const translations = {
         },
       ],
       viewAllServices: "VEZI TOATE SERVICIILE",
+      getDirections: "Cum ajung la clinică",
     },
     contactPreview: {
       title1: "Contact",
@@ -143,6 +145,7 @@ export const translations = {
       hoursTitle: "Monday - Sunday",
       hoursValue: "24/7",
       searchPlaceholder: "Search...",
+      onlineAppointment: "Online Appointment",
     },
     nav: {
       home: "Home",
@@ -185,6 +188,7 @@ export const translations = {
         },
       ],
       viewAllServices: "VIEW ALL SERVICES",
+      getDirections: "Get Directions",
     },
     contactPreview: {
       title1: "Contact",

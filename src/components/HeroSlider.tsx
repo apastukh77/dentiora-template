@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, MapPin } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { site } from "@/lib/site";
 
@@ -59,8 +59,8 @@ export function HeroSlider() {
             {/* Background image on the right */}
             <div
               className="absolute inset-0 bg-cover bg-no-repeat"
-              style={{ 
-                backgroundImage: `url(${images[i]})` ,
+              style={{
+                backgroundImage: `url(${images[i]})`,
                 backgroundPosition: imagePositions[i],
               }}
             />
@@ -113,15 +113,30 @@ export function HeroSlider() {
                   </div>
                 </div>
 
-                <a
-                  href={`tel:${site.phone}`}
-                  className="mt-9 inline-flex items-center gap-3 rounded-md bg-primary px-7 py-4 text-sm font-semibold tracking-wide text-primary-foreground shadow-sm transition-colors hover:bg-primary-dark"
-                >
-                  {slide.cta}
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
-                    <ChevronRight className="h-4 w-4" />
-                  </span>
-                </a>
+                {/* Кнопка звонка (CTA слайда) и кнопка Get Directions */}
+                <div className="mt-9 flex flex-wrap items-center gap-4">
+                  <a
+                    href={`tel:${site.phone}`}
+                    className="inline-flex items-center gap-3 rounded-md bg-primary px-7 py-4 text-sm font-semibold uppercase tracking-wide text-primary-foreground shadow-sm transition-colors hover:bg-primary-dark"
+                  >
+                    {slide.cta}
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+                      <ChevronRight className="h-4 w-4" />
+                    </span>
+                  </a>
+
+                  <a
+                    href={site.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 rounded-md bg-green-600 px-7 py-4 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition-colors hover:bg-green-700"
+                  >
+                    Get Directions
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+                      <ChevronRight className="h-4 w-4" />
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
